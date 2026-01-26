@@ -1,0 +1,43 @@
+Matériaux nécessaires : 
+
+Contrôle :
+
+-1*ESP32-WROOM-32 (nombre de GPIO suffisant, wifi intégré pour les notifications, facile à intégrer)
+
+Alimentation : 
+
+-1*Alimentation 12V DC 2–5A (stable et alimente LED, ventilateur...)
+
+câblage:
+
+-Plusieurs Fils jumper 
+-1*Boîtier plastique 
+
+Éclairage intelligent :
+
+-1m LED strip 12V (Fournit un éclairage variable de la salle :: piloté via PWM)
+-1*MOSFET IRLZ44N (supporte courant élevé,stable avec PWM,fonctionne parfaitement avec 3.3V de l’ESP32)
+-1*capteur lumiére BH1750 (précis)
+-1*Convertisseur LM2596 (plus stable et moins de chauffe)
+-1*Servo moteur MG995 ( plus simple car il a un driver intégré ,plus compact et plus facile)
+
+Température et climatisation :
+
+-1*DHT22 (Plus précis,meilleure plage de température,compatible avec ESP32 et idéal pour régulation progressive)
+-1*Ventilateur 12V DC (Plus facile à intégrer , simple et réaliste pour maquette)
+-1*Résistance chauffante (simple et fiable , sécurisé pour maquette)
+-2*Module relais 5V (commander ventilateur et résistance sans surcharger ESP32)
+
+Poste travail smart :
+
+-1*Capteur PIR HC-SR501 (Plus simple que capteur infrarouge complexe ou caméra et Suffisant pour prototype)
+-1*Module relais 5V
+-1*Capteur d’empreinte AS608 (Suffisant pour maquette , moins cher , plus pratique ,abordable et bien documenté)
+-1*PZEM-004T (mesure précise , simple à connecter , idéal pour maquette)
+
+Sécurité Incendie  :
+
+-1*Capteur gaz MQ2 (abordable et facile à utiliser pour maquette, plus simple que capteurs optiques industriels)
+-1*buzzer 5v (plus facile, pas besoin de générer un signal PWM)
+-1*Ventilateur 12V DC (Plus facile à intégrer , simple et réaliste pour maquette)
+-1*Servo moteur MG995 ( plus simple car il a un driver intégré ,plus compact et plus facile)
