@@ -1,4 +1,4 @@
-I.But de l’application : Smart Enterprise Management System
+I.But de l’application : Smart Enterprise Management System (SEMS)
 
 1.Objectif principal:
 L’application vise à centraliser et automatiser la gestion des systèmes critiques d’une entreprise, en combinant confort, sécurité et efficacité énergétique.
@@ -11,16 +11,16 @@ Elle permet de superviser et de contrôler intelligemment :
 L’objectif est de créer un environnement de travail confortable, sûr et optimisé en énergie, tout en offrant une interface unique pour le contrôle et la supervision.
 
 2.Problème à résoudre
-Les entreprises font face à plusieurs problèmes que notre système  cherche à résoudre :
+Les entreprises font face à plusieurs problèmes que le SEMS cherche à résoudre :
 -Consommation énergétique excessive
   Éclairage, chauffage, climatisation et équipements laissés actifs inutilement.
 -Confort thermique et lumineux inégal
   Les employés peuvent arriver dans un espace trop froid, trop chaud, trop lumineux ou trop sombre.
 -Gestion manuelle inefficace
-  Le contrôle manuel de tous les systèmes prend du temps.
+  Le contrôle manuel de tous les systèmes prend du temps et peut générer des erreurs.
 -Absence de supervision centralisée
   Difficile de suivre en temps réel l’état des systèmes et d’analyser l’historique des consommations.
--Maintenance réactives
+-Sécurité et maintenance réactives
 -Les alarmes et alertes sont souvent réactives plutôt que préventives.
 
 3️.Public cible
@@ -142,6 +142,48 @@ IV- Les pages :
  Graphiques énergie, température
  Historique des alertes et interventions
 -Page Gestion des utilisateurs (Ajouter / supprimer / modifier utilisateurs avec leurs rôles)
+
+V. Conception graphique (UI/UX):
+
+1. Style Général (Look & Feel)
+Concept : "Modern SaaS Light". Interface aérienne, épurée et accessible.
+Ambiance : Propre et rassurante. Évite l'aspect "gamer/dark mode" classique.
+Mots-clés : Minimalisme, Espace (Whitespace), Arrondi (Soft UI), Profondeur.
+
+2. Palette de Couleurs
+A. Les Fonds (Bases)
+Global : #F8F7FC (Lavender Pale) – Blanc cassé teinté violet, réduit la fatigue oculaire.
+Conteneurs : #FFFFFF (Blanc Pur) – Crée la séparation hiérarchique avec le fond.
+
+B. La Marque (Accents)
+Primaire : #8B5CF6 (Violet Moderne) – Actions principales, navigation active, icônes.
+Secondaire : #EC4899 (Rose Fuchsia) – Dégradés boutons, points d'énergie, dynamisme.
+
+C. La Typographie (Texte)
+Titres : #111827 (Anthracite) – Contraste maximum pour les chiffres (KPIs).
+Corps : #6B7280 (Gris Moyen) – Pour les labels et descriptions, moins agressif que le noir.
+
+D. Sémantique (Feedback)
+Succès : #10B981 (Émeraude).
+Danger : #EF4444 (Rouge doux).
+Attention : #F59E0B (Amber).
+
+3. Éléments Visuels & Composants
+Formes : Coins arrondis (12px à 16px) pour adoucir l'interface ("Human-Centric").
+Cartes (Cards) :
+Fond blanc avec bordure grise fine (#E5E7EB).
+Ombre douce (box-shadow) + effet de lévitation au survol (translateY).
+Boutons (CTA) :
+Style : Dégradé Violet → Rose.
+Forme : Capsule ou rectangle très arrondi.
+Navigation (Sidebar) :
+Fond blanc distinct. Élément actif = fond violet pâle (#DDD6FE).
+Contrôles IoT :
+Toggles (Switch) : Deviennent violets quand activés.
+Sliders : Piste grise discrète, curseur blanc cerclé de violet.
+Polices :
+Titres : Outfit (Géométrique, tech).
+Texte : Plus Jakarta Sans (Lisible, moderne).
 
 VI- Conception technique :
 
