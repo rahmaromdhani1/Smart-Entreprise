@@ -1,4 +1,4 @@
-I.But de l’application : Smart Enterprise Management System (SEMS)
+I.But de l’application : Smart Enterprise Management System
 
 1.Objectif principal:
 L’application vise à centraliser et automatiser la gestion des systèmes critiques d’une entreprise, en combinant confort, sécurité et efficacité énergétique.
@@ -11,16 +11,16 @@ Elle permet de superviser et de contrôler intelligemment :
 L’objectif est de créer un environnement de travail confortable, sûr et optimisé en énergie, tout en offrant une interface unique pour le contrôle et la supervision.
 
 2.Problème à résoudre
-Les entreprises font face à plusieurs problèmes que le SEMS cherche à résoudre :
+Les entreprises font face à plusieurs problèmes que notre système  cherche à résoudre :
 -Consommation énergétique excessive
   Éclairage, chauffage, climatisation et équipements laissés actifs inutilement.
 -Confort thermique et lumineux inégal
   Les employés peuvent arriver dans un espace trop froid, trop chaud, trop lumineux ou trop sombre.
 -Gestion manuelle inefficace
-  Le contrôle manuel de tous les systèmes prend du temps et peut générer des erreurs.
+  Le contrôle manuel de tous les systèmes prend du temps.
 -Absence de supervision centralisée
   Difficile de suivre en temps réel l’état des systèmes et d’analyser l’historique des consommations.
--Sécurité et maintenance réactives
+-Maintenance réactives
 -Les alarmes et alertes sont souvent réactives plutôt que préventives.
 
 3️.Public cible
