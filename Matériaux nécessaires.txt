@@ -3,6 +3,7 @@ Matériaux nécessaires :
 Contrôle :
 
 -1*ESP32-WROOM-32 (nombre de GPIO suffisant, wifi intégré pour les notifications, facile à intégrer)
+-1*ESP32 (simulation Wake on LAN)
 
 Alimentation : 
 
@@ -26,13 +27,13 @@ Température et climatisation :
 -1*DHT22 (Plus précis,meilleure plage de température,compatible avec ESP32 et idéal pour régulation progressive)
 -1*Ventilateur 12V DC (Plus facile à intégrer , simple et réaliste pour maquette)
 -1*Résistance chauffante (simple et fiable , sécurisé pour maquette)
--2*Module relais 5V (commander ventilateur et résistance sans surcharger ESP32)
+-3*Led (rouge + bleue + vert)
+-3*Module relais 5V (commander ventilateur et résistance sans surcharger ESP32)
 
 Poste travail smart :
 
 -1*Capteur PIR HC-SR501 (Plus simple que capteur infrarouge complexe ou caméra et Suffisant pour prototype)
--1*Module relais 5V
--1*Capteur d’empreinte AS608 (Suffisant pour maquette , moins cher , plus pratique ,abordable et bien documenté)
+-1*Module relais 5v
 -1*PZEM-004T (mesure précise , simple à connecter , idéal pour maquette)
 
 Sécurité Incendie  :
