@@ -1,4 +1,5 @@
-|.But de l’application : Smart Enterprise Management System (SEMS)
+I.But de l’application : Smart Enterprise Management System (SEMS)
+
 1.Objectif principal:
 L’application vise à centraliser et automatiser la gestion des systèmes critiques d’une entreprise, en combinant confort, sécurité et efficacité énergétique.
 Elle permet de superviser et de contrôler intelligemment :
@@ -29,7 +30,7 @@ Le Systeme est destiné à :
 -Les employés et utilisateurs finaux qui bénéficient d’un environnement confortable et sûr.
 -Les équipes de maintenance qui peuvent anticiper les problèmes grâce à la collecte de données et aux alertes.
 
-||.Identifier les utilisateurs :
+II.Identifier les utilisateurs :
 
 Administrateur: 
 -Supervise tous les modules IoT
@@ -45,3 +46,78 @@ PDG:
 -Statistiques énergie, eau, climat pour prise de décision
 -Notification des incidents critiques
 
+III. Fonctionnalités du Systeme:
+
+1️. Fonctionnalités principales:
+Ces fonctionnalités constituent le cœur du système et répondent directement à l’objectif principal : confort, sécurité et efficacité énergétique.
+
+1.1 Smart Lighting Control System
+But : Ajuster automatiquement l’éclairage et l’ouverture des stores pour optimiser la luminosité et économiser de l’énergie.
+Actions principales :
+-Mesurer la luminosité naturelle et l’éclairage intérieur.
+-Ajuster l’intensité des LED selon les besoins (faible, moyen, élevé).
+-Ouvrir ou fermer automatiquement les stores selon l’ensoleillement extérieur.
+-Éteindre les lumières dans les zones inoccupées grâce à la détection de présence.
+Action utilisateur :
+-Supervision des états d’éclairage via dashboard ou app mobile.
+-Override manuel : allumer/éteindre les lumières ou ouvrir/fermer les stores.
+
+1.2 Smart Temperature Control System
+But : Maintenir une température intérieure confortable et stable tout en optimisant la consommation d’énergie.
+Actions principales :
+-Mesurer la température intérieure et extérieure (via capteurs et API météo).
+-Pré-conditionner l’espace avant l’arrivée des employés.
+-Régulation dynamique de chauffage, climatisation ou ventilation pendant les heures de travail.
+-Éviter les surchauffes ou refroidissements brusques.
+Action utilisateur :
+-Supervision en temps réel des températures via app/dashboard.
+-Ajustement manuel des consignes de température si nécessaire.
+
+1.3 Smart Workstation Management (Wake-on-LAN simulé)
+But : Simuler l’allumage à distance des postes de travail pour économiser de l’énergie.
+Actions principales :
+-Passer les ESP32 (postes simulés) en Deep Sleep (OFF).
+-Réveiller un poste via commande MQTT (“Wake”) envoyée par le backend.
+-Retour automatique en Deep Sleep selon : timeout, fin de journée ou inactivité prolongée.
+Action utilisateur :
+-Allumer/éteindre les postes depuis l’application mobile ou le dashboard.
+-Superviser l’état ON/OFF de chaque poste.
+
+1.4 Sécurité et Alarmes
+But : Détecter et alerter en cas de situations critiques pour la sécurité.
+Actions principales :
+-Détecter la fumée ou autres anomalies.
+-Activer ventilateur ou ouverture automatique des fenêtres si nécessaire.
+-Envoyer des notifications instantanées à l’application mobile.
+Action utilisateur :
+-Visualiser les alertes en temps réel.
+-Prendre le contrôle manuel en cas d’urgence.
+1.5 Gestion de l’énergie et des ressources
+But : Suivre et optimiser la consommation énergétique et des ressources.
+Actions principales :
+-Mesurer la tension, le courant, la puissance et l’énergie cumulée.
+-Suivi par poste et global.
+-Déclencher alertes sur surconsommation, surtension ou coupure.
+Action utilisateur :
+-Consulter la consommation globale et par poste via app/dashboard.
+
+2. Fonctionnalités secondaires:
+Ces fonctionnalités améliorent le confort, la supervision et l’expérience utilisateur, mais ne sont pas critiques pour le fonctionnement de base.
+-Historique et analyse : stockage des données d’éclairage, température et énergie pour analyse et optimisation.
+-Notifications et alertes personnalisables : par type d’événement (sécurité, énergie, maintenance).
+-Override prioritaire : l’utilisateur peut toujours reprendre le contrôle manuel sur toutes les commandes automatiques.
+-Simulation / Maquette : démonstration des actions (LED, ventilateur, servo moteurs) pour visualiser le système en temps réel.
+
+3.Actions possibles pour chaque utilisateur:
+
+Administrateur:
+-Supervise tous les modules IoT.
+-Accède à l’historique et aux rapports.
+-Gère les utilisateurs (ajouter, supprimer, modifier avec leurs rôles).
+-Visualise globalement les alertes et les performances des officiers.
+-Consulte les statistiques énergie, eau et climat pour prise de décision.
+-Reçoit les notifications des incidents critiques.
+
+Officier:
+-Reçoit notifications et alertes.
+-Contrôle son poste (lumière, stores, clim).
