@@ -1,0 +1,16 @@
+Identifier les utilisateurs :
+
+Administrateur: 
+-Supervise tous les modules IoT
+-Accède à l’historique et rapports
+-Gestion des utilisateurs 
+
+Officier:
+-Reçoit notifications et alertes
+-Contrôle son poste
+
+PDG:
+-Visualisation globale des alertes et performances des officers
+-Statistiques énergie, eau, climat pour prise de décision
+-Notification des incidents critiques
+
