@@ -30,21 +30,20 @@ Le Systeme est destiné à :
 -Les employés et utilisateurs finaux qui bénéficient d’un environnement confortable et sûr.
 -Les équipes de maintenance qui peuvent anticiper les problèmes grâce à la collecte de données et aux alertes.
 
-II.Identifier les utilisateurs :
+II- Identifier les utilisateurs :
 
 Administrateur: 
 -Supervise tous les modules IoT
 -Accède à l’historique et rapports
 -Gestion des utilisateurs 
+-Visualisation globale des alertes et performances des officers
+-Statistiques énergie, eau, climat pour prise de décision
+-Notification des incidents critiques
+
 
 Officier:
 -Reçoit notifications et alertes
 -Contrôle son poste
-
-PDG:
--Visualisation globale des alertes et performances des officers
--Statistiques énergie, eau, climat pour prise de décision
--Notification des incidents critiques
 
 III. Fonctionnalités du Systeme:
 
@@ -121,3 +120,40 @@ Administrateur:
 Officier:
 -Reçoit notifications et alertes.
 -Contrôle son poste (lumière, stores, clim).
+
+IV- Les pages :
+
+-Page de connexion : admin ou officier
+
+*Si user = officier :
+-Page principale :Dashboard Poste
+ État du poste : lumière, stores, clim
+ Consommation énergie instantanée
+ Indicateurs : température
+-Page Contrôle 
+-Page Notifications & Alertes
+
+*Si user = admin :
+-Page principale :Dashboard
+ Vue de tous les modules IoT : lumière, stores, clim
+ Indicateurs en temps réel : température, énergie,
+ Alertes et notifications critiques
+-Page Historique & Rapports
+ Graphiques énergie, température
+ Historique des alertes et interventions
+-Page Gestion des utilisateurs (Ajouter / supprimer / modifier utilisateurs avec leurs rôles)
+
+VI- Conception technique :
+
+1-les technologies utilisées:
+
+*Front : React.js (pour Web)+ React Native 
+*Back : Node.js + Express.js
+*Base de données : MongoDB 
+*Communication front-back : REST API + JSON
+*Temps réel : WebSocket socket.io 
+*Notifications push : Firebase
+
+2-Architecture:
+
+Front (interface mobile ou web) ---> Back (REST API: Gestion utilisateurs , Historique & rapports + Socket.IO :temps réel front Web et mobile + Firebase : notifications et alertes ) ----> Base de données (Collection utilisateurs (admin, officier) , Collection alertes / notifications , Collection consommation ..)
