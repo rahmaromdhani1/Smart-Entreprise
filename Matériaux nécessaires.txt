@@ -1,7 +1,7 @@
 Matériaux nécessaires : 
 
 Contrôle :
-
+-1*ESP01
 -1*ESP32-WROOM-32 (nombre de GPIO suffisant, wifi intégré pour les notifications, facile à intégrer)
 -1*ESP32 (simulation Wake on LAN)
 
@@ -20,7 +20,7 @@ câblage:
 -1*MOSFET IRLZ44N (supporte courant élevé,stable avec PWM,fonctionne parfaitement avec 3.3V de l’ESP32)
 -1*capteur lumiére BH1750 (précis)
 -1*Convertisseur LM2596 (plus stable et moins de chauffe)
--1*Servo moteur MG995 ( plus simple car il a un driver intégré ,plus compact et plus facile)
+-1*Moteur pas à pas 12v
 
 Température et climatisation :
 
@@ -41,4 +41,4 @@ Sécurité Incendie  :
 -1*Capteur gaz MQ2 (abordable et facile à utiliser pour maquette, plus simple que capteurs optiques industriels)
 -1*buzzer 5v (plus facile, pas besoin de générer un signal PWM)
 -1*Ventilateur 12V DC (Plus facile à intégrer , simple et réaliste pour maquette)
--1*Servo moteur MG995 ( plus simple car il a un driver intégré ,plus compact et plus facile)
+-1*Moteur pas à pas 12v
